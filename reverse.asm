@@ -1,4 +1,4 @@
-# Garrett Green & Logan 
+# Garrett Green & Logan Schwarz
 # Section: 03 
 # CPE 315: Commented java function and .asm file to reverse a 32 bit number.
 

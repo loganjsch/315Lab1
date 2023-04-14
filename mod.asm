@@ -1,4 +1,4 @@
-# Garrett Green and Logan 
+# Garrett Green and Logan Schwarz
 # Section: 03 
 # CPE 315: mod.asm file to find remainder of numerator and divisor (Java function and .asm)
 
