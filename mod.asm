@@ -12,7 +12,7 @@
 .data
 
 welcome:
-	.asciiz " This program returns the remainder of a given number & divisor \n\n"
+	.asciiz "This program returns the remainder of a given number & divisor \n\n"
 
 prompt:
 	.asciiz " Enter an integer: "
@@ -39,7 +39,7 @@ main:
 	# This is the starting address of the prompt (notice the
 	# different address from the welcome message)
 	lui     $a0, 0x1001
-	ori     $a0, $a0,0x22
+	ori     $a0, $a0,0x43
 	syscall
 
     # Read 1st integer from the user (numerator)
@@ -53,7 +53,7 @@ main:
 	# 0x22 is hexidecimal for 34 decimal (the length of the previous welcome message)
 	ori     $v0, $0, 4			
 	lui     $a0, 0x1001
-	ori     $a0, $a0,0x22
+	ori     $a0, $a0,0x43
 	syscall
 
     # Read 2nd integer (denominator)
@@ -73,7 +73,7 @@ final:
 #display text
     ori     $v0, $0, 4			
 	lui     $a0, 0x1001
-	ori     $a0, $a0,0x36
+	ori     $a0, $a0,0x59
 	syscall
 
     ori $v0, $0, 1 
