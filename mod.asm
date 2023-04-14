@@ -1,7 +1,27 @@
-# Garrett Green
-# mod.asm 
-# CPE 315
+# Garrett Green and Logan 
+# Section: 03 
+# CPE 315: mod.asm file to find remainder of numerator and divisor (Java function and .asm)
 
+
+# import java.util.scanner
+# public void main(){
+# 	 string welcome = "This program returns the remainder of a given number & divisor \n\n";
+# 	 string prompt = " Enter an Integer: ";
+#    string remainder = " \n remainder: ";
+#    system.out.print(welcome);
+#    system.out.print(prompt);
+#   //scan integer from command line  (x)
+# 	 Scanner scan = new Scanner(system.in);	
+#    int num = scan.nextInt();
+# 	 system.out.print(prompt);
+#    int denominator = scan.nextInt();
+#    while (denominator > numerator){
+#		numerator = numerator - denominator;
+# 	}
+#    system.out.print(remainder);
+#    system.out.print(numerator);
+#    
+#}
 
 # declare global so programmer can see actual addresses.
 .globl welcome
