@@ -12,7 +12,7 @@
 .data
 
 welcome:
-	.asciiz " This program returns the reverse of a 32-bit number \n\n"
+	.asciiz "This program returns the reverse of a 32-bit number \n\n"
 
 prompt:
 	.asciiz " Enter an integer: "
@@ -39,7 +39,7 @@ main:
 	# This is the starting address of the prompt (notice the
 	# different address from the welcome message)
 	lui     $a0, 0x1001
-	ori     $a0, $a0,0x22
+	ori     $a0, $a0,0x38
 	syscall
 
     # Read 1st integer from the user (numerator)
@@ -49,10 +49,11 @@ main:
      # Put num into s0
     addi $s0, $v0, 0
 
-loop:
 	# $s1 carries counter var
 	addi $s1, $0, 0
 
+loop:
+	
 	srl $s2, $s0, $s1
 	andi $s3, $s2, 0x01
 	sll $s4, $s4, 1
@@ -64,7 +65,7 @@ loop:
 	#display text
     ori     $v0, $0, 4			
 	lui     $a0, 0x1001
-	ori     $a0, $a0,0x36
+	ori     $a0, $a0,0x4E
 	syscall
 
 	# load syscall to print integer and set $a0 to reverse number
