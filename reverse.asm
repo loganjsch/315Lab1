@@ -1,6 +1,26 @@
 # Garrett Green & Logan 
-# mod.asm 
-# CPE 315
+# Section: 03 
+# CPE 315: Commented java function and .asm file to reverse a 32 bit number.
+
+# public void main(){
+#.   string welcome = "This program returns the reverse (bit) of a 32 bit number \n\n";
+#    string prompt = " Enter an Integer: ";
+#    string remainder = " \n Reverse: ";
+#    system.out.print(welcome);
+#    system.out.print(prompt);
+#   //scan integer from command line  (x)
+#    Scanner scan = new Scanner(system.in);	
+#    int num = scan.nextInt();
+#    int counter = 0;
+#    int reverse_num = 0;
+#    while (counter < 32){
+#		int bit_change = num >> counter & 1;
+#       reversed = reversed << 1 | bit;
+#       counter++;
+#}	
+#    system.out.print(remainder);
+#	 system.out.print(reverse_num);
+#}
 
 
 # declare global so programmer can see actual addresses.
